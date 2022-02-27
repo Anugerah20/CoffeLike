@@ -335,12 +335,12 @@ a {
 
   nav .menu {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
 
   nav .menu ul {
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     line-height: 30px;
   }
 
@@ -398,9 +398,9 @@ a {
 
   nav .menu-item {
     display: flex;
-    justify-content: space-around!important;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px;
+    margin: 0 10px;
     text-align: center;
   }
 
