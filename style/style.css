@@ -153,24 +153,6 @@ nav ul li a:hover {
   color: #f85f73;
 }
 
-.login {
-  padding: 10px 10px;
-  border: none;
-  background: #f85f73;
-  border-radius: 4px;
-  transition: all 0.3s ease-out;
-}
-
-.login a {
-  color: #fff;
-  font-size: 16px;
-}
-
-.login:hover {
-  background: #fa334e;
-  transform: scale(0.9);
-}
-
 /* Home And About */
 
 section {
