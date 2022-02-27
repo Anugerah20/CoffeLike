@@ -118,9 +118,9 @@ html {
 
 nav {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
-  line-height: 80px;
+  line-height: 70px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -346,8 +346,7 @@ a {
 
   nav .menu ul li {
     display: inline;
-    text-align: center;
-    padding: 0 2%;
+    margin: 0 auto;
   }
 
   section {
@@ -389,19 +388,23 @@ a {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 463px) {
   #container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
 
   nav .menu-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 0 10px;
     text-align: center;
+  }
+
+  nav .menu-item ul li {
+    display: block;
+    margin-left: 20px;
   }
 
   .column-partners {
@@ -415,6 +418,6 @@ a {
   #copyright p {
     display: block;
     text-align: center;
-    margin-top: -4.5em;
+    margin-top: -1em;
   }
 }
