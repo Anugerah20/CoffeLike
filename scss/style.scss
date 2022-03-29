@@ -1,0 +1,349 @@
+@import '../components/header';
+@import '../components/home';
+@import '../components/about';
+@import '../components/menu-coffe';
+@import '../components/contact';
+@import '../components/colors';
+@import '../components/typhography';
+
+// Reset scss
+body, html {
+   margin: 0;
+   padding: 0;
+   background: $textUtama;
+   box-sizing: border-box;
+   font-family: 'Nunito', sans-serif;
+   font-size: 16px;
+   line-height: 33px;
+   scroll-behavior: smooth;
+}
+
+//Mengatur icon navigasi
+i {
+   font-size: 32px;
+   cursor: pointer;
+}
+
+//Mengatur overflow
+.over-hidden {
+   overflow: hidden;
+}
+
+//Mengatur pewarnaan gambar
+.img-filter {
+   filter: grayscale(100%);
+   transition: 0.4s ease-in-out;
+   &:hover {
+      filter: grayscale(0);
+   }
+}
+
+//Mengatur ukuran gambar 
+.img-responsive {
+   max-width: inherit;
+   width: 100%;
+   clip: rect(10px, 190px, 190px, 10px);
+}
+
+.img-thumb {
+   width: 50px;
+   height: 50px;
+}
+
+.h-square {
+   overflow: hidden;
+   height: 200px;
+}
+
+.over {
+   height: 400px;
+   overflow: hidden;
+}
+
+//Border-radius
+.radius-4 {
+   border-radius: 4px;
+}
+
+.radius-7 {
+   border-radius: 7px;
+}
+
+.radius-12 {
+   border-radius: 12px;
+}
+
+.radius-20 {
+   border-radius: 20px;
+}
+
+.radius-33 {
+   border-radius: 33px;
+}
+
+.radius-53 {
+   border-radius: 53px;
+}
+
+//Scale
+.scale {
+   transition: 0.3s ease-in;
+   cursor: pointer;
+   &:hover {
+      transform: scale(1.2);
+   }
+}
+
+//Padding
+.p-4 {
+   padding: (4/1280) * 100%;
+}
+
+.p-7 {
+   padding: (7/1280) * 100%;
+}
+
+.p-12 {
+   padding: (12/1280) * 100%;
+}
+
+.p-20 {
+   padding: (20/1280) * 100%;
+}
+
+.p-33 {
+   padding: (33/1280) * 100%;
+}
+
+.p-53 {
+   padding: (53/1280) * 100%;
+}
+
+//Margin
+.m-4 {
+   margin: (4/1280) * 100%;
+}
+
+.m-7 {
+   margin: (7/1280) * 100%;
+}
+
+.m-12 {
+   margin: (12/1280) * 100%;
+}
+
+.m-20 {
+   margin: (20/1280) * 100%;
+}
+
+.m-33 {
+   margin: (33/1280) * 100%;
+}
+
+.m-53 {
+   margin: (53/1280) * 100%;
+}
+
+//Margin Top
+.mt-0 {
+   margin-top: 0;
+}
+
+.mt-4 {
+   margin-top: (4/1280) * 100%;
+}
+
+.mt-7 {
+   margin-top: (7/1280) * 100%;
+}
+
+.mt-12 {
+   margin-top: (12/1280) * 100%;
+}
+
+.mt-20 {
+   margin-top: (20/1280) * 100%;
+}
+
+.mt-33 {
+   margin-top: (33/1280) * 100%;
+}
+
+.mt-53 {
+   margin-top: (53/1280) * 100%;
+}
+
+//Margin Bottom
+.mb-4 {
+   margin-bottom: (4/1280) * 100%;
+}
+
+.mb-7 {
+   margin-bottom: (7/1280) * 100%;
+}
+
+.mb-12 {
+   margin-bottom: (12/1280) * 100%;
+}
+
+.mb-20 {
+   margin-bottom: (20/1280) * 100%;
+}
+
+.mb-33 {
+   margin-bottom: (33/1280) * 100%;
+}
+
+.mb-53 {
+   margin-bottom: (53/1280) * 100%;
+}
+
+//Margin Right
+.mr-4 {
+   margin-right: (4/1280) * 100%;
+}
+
+.mr-7 {
+   margin-right: (7/1280) * 100%;
+}
+
+.mr-12 {
+   margin-right: (12/1280) * 100%;
+}
+
+.mr-20 {
+   margin-right: (20/1280) * 100%;
+}
+
+.mr-33 {
+   margin-right: (33/1280) * 100%;
+}
+
+.mr-53 {
+   margin-right: (53/1280) * 100%;
+}
+
+//Margin Left
+.ml-4 {
+   margin-left: (4/1280) * 100%;
+}
+
+.ml-7 {
+   margin-left: (7/1280) * 100%;
+}
+
+.ml-12 {
+   margin-left: (12/1280) * 100%;
+}
+
+.ml-20 {
+   margin-left: (20/1280) * 100%;
+}
+
+.ml-33 {
+   margin-left: (33/1280) * 100%;
+}
+
+.ml-53 {
+   margin-left: (53/1280) * 100%;
+}
+
+//Font Weight
+.fw-light {
+   font-weight: lighter;
+}
+
+.fw-normal {
+   font-weight: normal;
+}
+
+.fw-bold {
+   font-weight: bold;
+}
+
+.fw-bolder {
+   font-weight: bolder;
+}
+
+//Text Align
+.text-left {
+   text-align: left;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.text-right {
+   text-align: right;
+}
+
+// Warna garis
+hr {
+   color: rgb(194, 0, 0);
+}
+
+// Grid System
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   width: 90%;
+   padding: ((20/1200) * 100%) 0;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.cols {
+   flex: 1;
+}
+
+[class^='col'] {
+   content: ' ';
+   margin: 10px (2.75%/2);
+}
+
+.col-md-hidden,
+.col-xs-hidden {
+   margin: 0;
+}
+
+@for $i from 1 through 12 {
+   .col#{$i} {
+       width: (100%/ (12 / $i))-2.75%;
+   }
+}
+
+@media screen and(max-width:540px) {
+   @for $i from 1 through 12 {
+       .col#{$i} {
+           width: 100%;
+       }
+   }
+}
+
+@media screen and(max-width:1080px) {
+   @for $i from 1 through 12 {
+       .col#{$i}-md {
+           width: (100%/ (12 / $i))-1%;
+       }
+   }
+   .col-md-hidden {
+       display: none;
+       margin: 0;
+   }
+}
+
+@media screen and(max-width:540px) {
+   @for $i from 1 through 12 {
+       .col#{$i}-xs {
+           width: (100%/ (12 / $i))-1%;
+       }
+   }
+   .col-xs-hidden {
+       display: none;
+       margin: 0;
+   }
+}
