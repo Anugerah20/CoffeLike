@@ -10,6 +10,6 @@ https://unsplash.com/images
 - Vanilla JavaScript
 
 # Demo Website
-https://cofe-like.netlify.app/
+https://coffe-like.netlify.app/
 
 
