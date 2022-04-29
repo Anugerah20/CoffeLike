@@ -1,0 +1,45 @@
+@import '../components/header';
+@import '../components/colors';
+@import '../components/typhography';
+
+// START: Beranda
+.f-20{
+   font-size: 24px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 500;
+   color: $bgUtama;
+}
+
+.f-50{
+   font-size: 50px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 800;
+   color: $bgUtama;
+}
+
+.f-16{
+   font-size: 22px;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 400;
+   color: $textDua;
+}
+
+// Button Danger Home
+.btn-danger {
+   padding: 15px 20px;
+   cursor: pointer;
+   background: $btnDanger;
+   color: #FFF;
+   border: none;
+   outline: none;
+   text-decoration: none;
+   //display: inline;
+   border-radius: 20px;
+   font-weight: bold;
+   transform: scale(1);
+   transition: 0.3s ease-in;
+   &:hover {
+      background: $btnHover;
+      transform: scale(0.9);
+   }
+}
