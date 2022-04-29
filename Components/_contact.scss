@@ -1,0 +1,60 @@
+@import '../components/header';
+@import '../components/home';
+@import '../components/about';
+@import '../components/menu-coffe';
+@import '../components/colors';
+@import '../components/typhography';
+
+// START: Partner
+.partner-m {
+   margin-bottom: -35px;
+   margin-top: 30px;
+   font-size: 22px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 500;
+   color: $bgUtama;
+}
+
+.partner-xl {
+   font-size: 50px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 800;
+   color: $bgUtama;
+}
+
+.partner-s {
+   font-size: 20px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 400;
+   color: $textDua;
+}
+
+.partner-img {
+   filter: grayscale(100%);
+   transition: 0.5s ease-out;
+   &:hover {
+      filter: grayscale(0%);
+   }
+}
+
+// END: Partner
+
+// START: Kontak
+.footer {
+   background: #FFF;
+   &-menu, 
+   &-mode {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+   li {
+      cursor: pointer;
+   }
+   a{
+      color: $textFoo;
+      text-decoration: none;
+   }
+}
+
+// END: Kontak
