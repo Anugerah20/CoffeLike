@@ -1,0 +1,41 @@
+@import '../components/header';
+@import '../components/home';
+@import '../components/about';
+@import '../components/colors';
+@import '../components/typhography';
+
+// START: Menu Kopi
+.menu-m {
+   margin-bottom: -35px;
+   margin-top: 30px;
+   font-size: 22px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 500;
+   color: $bgUtama;
+}
+
+.menu-xl {
+   font-size: 50px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 800;
+   color: $bgUtama;
+}
+
+.menu-s {
+   font-size: 20px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 400;
+   color: $textDua;
+}
+
+.nama-kopi {
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   margin-left: 12px;
+}
+
+.shadow-img {
+   box-shadow: 9px 9px 20px -9px rgba(20,19,19,0.75);
+}
+
+//END: Menu Kopi
