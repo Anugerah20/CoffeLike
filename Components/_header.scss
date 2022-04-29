@@ -1,0 +1,159 @@
+@import '../components/colors';
+@import '../components/typhography';
+
+// Menu
+.nav {
+   padding: 0 (2.75%/2);
+   display: flex;
+   align-items: center;
+   // background-color: $bgUtama;
+   &-logo {
+       width: 20%;
+       h1 {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-size: 40px;
+           a {
+               text-decoration: none;
+               color: $bgUtama;
+               font-family: 'comic sans ms', sans-serif;   
+           }
+       }
+   }
+   &-menu {
+       width: 80%;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       &_link {
+          width: 70%;
+          ul {
+             margin: 0;
+             padding: 0;
+             list-style: none;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             li {
+                a {
+                   font-size: 20px;
+                   display: block;
+                   padding: 10px 20px;
+                   text-decoration: none;
+                   color: $bgUtama;
+                   margin-top: 10px;
+                   transition: 0.3 ease-out;
+                       &.active {
+                           text-decoration: line-through;
+                       }
+                       &:hover {
+                        text-decoration: line-through;
+                        color: $btnHover;
+                       }
+                   }
+               }
+           }
+       }
+      &_lainnya {
+         width: 30%;
+         ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li {
+               a {
+                  margin-top: 15px;
+                  display: block;
+                  padding: 20px;
+                  color: black;
+                  img {
+                     width: 32px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and(max-width:1080px) {
+   .nav {
+       flex-wrap: wrap;
+   }
+   .nav-logo {
+       width: 100%;
+   }
+   .nav-menu {
+       display: none;
+       left: 5%;
+       top: 60px;
+       background: white;
+       z-index: 6;
+       padding: 10px;
+       position: absolute;
+       width: 88%;
+       -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+       &_link {
+           ul {
+               flex-direction: column;
+               li {
+                   width: 100%;
+                   a {
+                       padding: 10px 0;
+                       text-align: center;
+                   }
+               }
+           }
+       }
+       &_lainnya {
+           ul {
+               li {
+                   width: 100%;
+               }
+           }
+       }
+   }
+   .nav-menu_link,
+   .nav-menu_lainnya {
+       width: 100%;
+   }
+}
+
+#hamburger {
+   display: none;
+}
+
+.navigasi {
+   display: none;
+   position: absolute;
+   top: 22px;
+   right: 6.275%;
+   img {
+      width: 32px;
+   }
+}
+
+@media screen and(max-width:1080px) {
+   .navigasi {
+       display: block;
+   }
+}
+
+@media screen and(max-width:540px) {
+   .navigasi {
+       display: block;
+   }
+
+   .nav-menu_link {
+      margin: 20px auto;
+   }
+}
+
+#hamburger:checked~.nav-menu {
+   display: block;
+}
