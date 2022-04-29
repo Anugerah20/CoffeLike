@@ -1,0 +1,25 @@
+@import '../components/header';
+@import '../components/home';
+@import '../components/colors';
+@import '../components/typhography';
+
+.fs-20{
+   font-size: 24px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 500;
+   color: $bgUtama;
+}
+
+.fs-50{
+   font-size: 50px;
+   font-family: 'comic sans ms', sans-serif;
+   font-weight: 800;
+   color: $bgUtama;
+}
+
+.fs-16{
+   font-size: 22px;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 400;
+   color: $textDua;
+}
